@@ -14,11 +14,11 @@ class Player:
     self.cards=cards
     self.turn_count=turn_count
     self.number_of_cards=number_of_cards
-
-And some methods:
-
-- `play()` that will:
-  - **randomly** pick a `Card` in `cards`.
-  - Add the `Card` to the `Player`'s `history`.
-  - Print: `{PLAYER_NAME} {TURN_COUNT} played: {CARD_NUMBER} {CARD_SYMBOL_ICON}`.
-  - return the `Card`.
+    self.history=history
+ 
+  def play():
+    cards.append=Card() #randomly pick a Card in cards
+    history.append=cards[-1]
+    print(`{} {} played: {} {}`.format(PLAYER_NAME, TURN_COUNT, CARD_NUMBER, CARD_SYMBOL_ICON))
+    
+    return cards[-1]
