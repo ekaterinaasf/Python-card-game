@@ -21,7 +21,7 @@ class Card(Symbol):
     This class s inherits from class `Symbol` and have an additional attribute
     `value` which is a string (one of  `['A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K']`)
 ```
-    def __init__(self, color, icon, value):
+    def __init__(self, color: str, icon: int, value: str):
         self.value=value
         
         
